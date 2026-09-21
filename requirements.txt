@@ -1,0 +1,11 @@
+streamlit
+pandas
+sqlalchemy
+python-dotenv
+openai
+langchain
+langchain-openai
+langchain-core
+langchain-community
+langchain-classic
+langgraph
