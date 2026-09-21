@@ -1,0 +1,28 @@
+# Secrets - never commit these
+credentials.yml
+.env
+
+# Data_old is deprecated/unused - excluded to keep the repo clean
+# (data/ is intentionally INCLUDED since it's public historical data
+# and the app needs it to run for visitors with no setup)
+data_old/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Conda / venv
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml

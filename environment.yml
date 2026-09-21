@@ -1,0 +1,66 @@
+# ***
+# PYTHON SOFTWARE STACK INSTALLATION
+# ***
+
+# Conda Environment Setup Instructions ----
+#  - Using an environment.yml file with conda
+#  - Important Terminal Commands:
+#    conda env create -f environment.yml
+#    conda env update -f environment.yml 
+#    conda env export -n bana > envname.yml
+#    conda env remove -n bana
+#    conda env list
+#    conda activate bana
+#  
+
+
+name: bana
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - plotly
+  - scikit-learn
+  - xgboost
+  - jupyterlab
+  - openpyxl # install via conda (preferred)
+  - pip
+  - pip:
+      - openai
+      - langchain
+      - langchain_openai
+      - langchain-experimental
+      - langchain-community
+      - langchain-ollama
+      - langchain_chroma
+      - langchainhub
+      - langgraph
+      - streamlit
+      - pypdf
+      - google-api-python-client 
+      - pytube
+      - youtube-transcript-api
+      - PyYAML
+      - chromadb
+      - watchdog
+      - sqlalchemy
+      - transformers
+      - torch
+      - sentencepiece
+      - docx2txt # only available via pip
+      - unstructured
+      - msoffcrypto-tool
+      - rank_bm25
+      - sentence-transformers
+      # Additions for 6910
+      - langchain-groq
+
+
+     
+
+
+
