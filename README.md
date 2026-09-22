@@ -28,6 +28,12 @@ The application uses a LangGraph-based multi-agent workflow to route each studen
 
 Rather than asking a single AI model to interpret the question, locate the appropriate data, query the database, and construct the final response, the workflow separates these responsibilities into specialized routing and processing stages.
 
+### Application Workflow
+
+The diagram below shows how a student's question is routed through the specialized agents before the results are synthesized into a final response.
+
+![Academic Advising AI Multi-Agent Workflow](graph_visualization.png)
+
 ### 1. Question Interpretation & Routing
 
 The initial routing layer interprets the student's natural-language question and determines whether the answer requires:
