@@ -2,11 +2,9 @@
 
 ## Project Overview
 
-This project explores how generative AI and a multi-agent architecture can be used to make complex academic advising information easier for students to access and understand.
+This project explores how generative AI and a multi-agent architecture can be used to make complex academic advising information easier for students to access and understand. The application combines a custom SQL data source with four specialized AI agents to interpret natural-language questions, determine the appropriate academic information to retrieve, generate SQL queries, and return clear, conversational answers. Rather than relying on a single source of information, the project required building a structured academic advising database from multiple university documents and data sources.
 
-The application combines a custom SQL data source with four specialized AI agents to interpret natural-language questions, determine the appropriate academic information to retrieve, generate SQL queries, and return clear, conversational answers.
-
-Rather than relying on a single source of information, the project required building a structured academic advising database from multiple university documents and data sources.
+The project demonstrates how unstructured and distributed organizational information can be transformed into a structured data source and paired with generative AI to create a more accessible user interface. The goal was not simply to build a chatbot, but to create a workflow in which natural-language questions are interpreted, translated into structured database queries, and converted into useful responses.
 
 ## Data Preparation
 
@@ -91,9 +89,3 @@ A deployed version of the Academic Advising AI Assistant is available through St
 ## Project Repository
 
 The repository contains the Python application, agent components, supporting data, environment configuration, and application dependencies.
-
-## Project Purpose
-
-The project demonstrates how unstructured and distributed organizational information can be transformed into a structured data source and paired with generative AI to create a more accessible user interface.
-
-The goal was not simply to build a chatbot, but to create a workflow in which natural-language questions are interpreted, translated into structured database queries, and converted into useful responses.
