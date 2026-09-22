@@ -2,9 +2,13 @@
 
 ## Project Overview
 
-This project explores how generative AI and a multi-agent architecture can be used to make complex academic advising information easier for students to access and understand. The application combines a custom SQL data source with four specialized AI agents to interpret natural-language questions, determine the appropriate academic information to retrieve, generate SQL queries, and return clear, conversational answers. Rather than relying on a single source of information, the project required building a structured academic advising database from multiple university documents and data sources.
+This project explores how generative AI and a multi-agent architecture can be used to make complex academic advising information easier for students to access and understand. The project included the creation of a structured SQL database from multiple university information sources, including course catalogs, academic advising and degree-requirement resources, and academic-year class schedules. A LangGraph-based routing architecture interprets natural-language student questions and directs them to specialized agents for course catalog, class schedule, major, or minor information. The appropriate agent generates a SQL query against the academic database, retrieves the relevant information, and passes the results to a response-synthesis step that presents the answer in a clear, conversational format. The application is deployed through Streamlit and provides students with a single interface for asking questions that would otherwise require searching across multiple university resources.
 
 The project demonstrates how unstructured and distributed organizational information can be transformed into a structured data source and paired with generative AI to create a more accessible user interface. The goal was not simply to build a chatbot, but to create a workflow in which natural-language questions are interpreted, translated into structured database queries, and converted into useful responses.
+
+<p align="center">
+  <img src="AcademicAdvising.png" width="800" alt="Academic Advising AI Copilot Application">
+</p>
 
 ## Data Preparation
 
