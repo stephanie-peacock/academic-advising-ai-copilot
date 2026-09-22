@@ -7,7 +7,7 @@ This project explores how generative AI and a multi-agent architecture can be us
 The project demonstrates how unstructured and distributed organizational information can be transformed into a structured data source and paired with generative AI to create a more accessible user interface. The goal was not simply to build a chatbot, but to create a workflow in which natural-language questions are interpreted, translated into structured database queries, and converted into useful responses.
 
 <p align="center">
-  <img src="AcademicAdvising.png" width="800" alt="Academic Advising AI Copilot Application">
+  <img src="AIAdvisingCopilot.png" width="800" alt="Academic Advising AI Copilot Application">
 </p>
 
 ## Data Preparation
