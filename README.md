@@ -2,9 +2,11 @@
 
 ## Project Overview
 
-This project explores how generative AI and a multi-agent architecture can be used to make complex academic advising information easier for students to access and understand. The project included the creation of a structured SQL database from multiple university information sources, including course catalogs, academic advising and degree-requirement resources, and academic-year class schedules. A LangGraph-based routing architecture interprets natural-language student questions and directs them to specialized agents for course catalog, class schedule, major, or minor information. The appropriate agent generates a SQL query against the academic database, retrieves the relevant information, and passes the results to a response-synthesis step that presents the answer in a clear, conversational format. The application is deployed through Streamlit and provides students with a single interface for asking questions that would otherwise require searching across multiple university resources.
+The **Academic Advising AI Copilot** is a multi-agent application that allows students to ask academic advising questions in natural language and receive clear, conversational answers.
 
-The project demonstrates how unstructured and distributed organizational information can be transformed into a structured data source and paired with generative AI to create a more accessible user interface. The goal was not simply to build a chatbot, but to create a workflow in which natural-language questions are interpreted, translated into structured database queries, and converted into useful responses.
+The project combines university information from **course catalogs, class schedules, and degree/advising resources** into a structured SQL database. A LangGraph workflow routes each question to the appropriate specialized agent, generates and executes the required SQL query, and converts the results into a student-friendly response.
+
+**Key capabilities:** Multi-Agent AI | Natural Language to SQL | Data Integration | Conversational Analytics
 
 <p align="center">
   <img src="AIAdvisingCopilot.png" width="800" alt="Academic Advising AI Copilot Application">
