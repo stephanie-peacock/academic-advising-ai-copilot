@@ -12,6 +12,14 @@ The project combines university information from **course catalogs, class schedu
   <img src="AIAdvisingCopilot.png" width="800" alt="Academic Advising AI Copilot Application">
 </p>
 
+## Application
+
+A deployed version of the Academic Advising AI Assistant is available through Streamlit:
+
+[Launch the Academic Advising AI Assistant](https://academic-advising-ai-copilot-mvvkzubuqmehmwqoskzlu4.streamlit.app/)
+
+> **Please note:** The application is hosted using Streamlit's shared hosting environment. If the application has been inactive, it may need to restart before opening. The initial load can take up to approximately five minutes.
+
 ## Data Preparation
 
 A significant part of the project involved creating the SQL data source used by the AI application.
@@ -83,14 +91,6 @@ This separation of routing, SQL generation, data retrieval, and response generat
 - Relational Data Design
 - Streamlit
 - Natural-Language Interfaces
-
-## Application
-
-A deployed version of the Academic Advising AI Assistant is available through Streamlit:
-
-[Launch the Academic Advising AI Assistant](https://academic-advising-ai-copilot-mvvkzubuqmehmwqoskzlu4.streamlit.app/)
-
-> **Please note:** The application is hosted using Streamlit's shared hosting environment. If the application has been inactive, it may need to restart before opening. The initial load can take up to approximately five minutes.
 
 ## Project Repository
 
