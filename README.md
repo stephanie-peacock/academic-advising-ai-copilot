@@ -8,7 +8,7 @@ The project combines university information from **course catalogs, class schedu
 
 **Key capabilities:** Multi-Agent AI | Natural Language to SQL | Data Integration | Conversational Analytics
 
-<p align="center">
+<p align="left">
   <img src="AIAdvisingCopilot.png" width="800" alt="Academic Advising AI Copilot Application">
 </p>
 
