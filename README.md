@@ -24,23 +24,43 @@ This data preparation step was necessary because the information students need f
 
 ## Multi-Agent Architecture
 
-The application uses four specialized AI agents rather than relying on a single model to perform the entire task.
+The application uses a LangGraph-based multi-agent workflow to route each student's question to the most appropriate academic data source and generate the SQL needed to answer it.
 
-The agents divide the workflow into distinct responsibilities, including:
+Rather than asking a single AI model to interpret the question, locate the appropriate data, query the database, and construct the final response, the workflow separates these responsibilities into specialized routing and processing stages.
 
-### Data Selection and Routing
-Interprets the student's question and determines which source of academic data — or combination of sources — is most appropriate for answering it.
+### 1. Question Interpretation & Routing
 
-### SQL Generation
-Translates the interpreted request into SQL queries that retrieve the relevant information from the academic database.
+The initial routing layer interprets the student's natural-language question and determines whether the answer requires:
 
-### Response Generation
-Transforms the retrieved information into a clear, conversational response appropriate for the student's question.
+- Course catalog information
+- Class schedule information
+- Degree requirement information
 
-### Additional Agent
-A fourth specialized agent supports the application workflow. [Description to be added.]
+Questions are then routed further when necessary:
 
-This architecture separates interpretation, data retrieval, and response generation into specialized tasks rather than asking a single AI model to perform the entire process.
+- **Course catalog questions** are classified as current or historical.
+- **Degree requirement questions** are classified as major or minor.
+- **Schedule questions** are sent directly to the schedule agent.
+
+### 2. Specialized SQL Agents
+
+Five specialized SQL agents generate queries for their respective areas:
+
+- **Current Catalog Agent** — current course descriptions, prerequisites, credits, restrictions, and other catalog information
+- **Historical Catalog Agent** — course information from previous academic years
+- **Schedule Agent** — semester-specific class schedules, instructors, times, locations, and delivery formats
+- **Major Requirements Agent** — major requirements, required courses, electives, and program structure
+- **Minor Requirements Agent** — minor requirements, prerequisites, electives, credit requirements, and program policies
+
+Each agent receives the interpreted question and generates SQL appropriate to its portion of the academic database.
+
+### 3. Database Query & Response Generation
+
+The generated SQL is executed against the application's SQLite database. Query results are converted into a common data structure and passed to a response-synthesis step.
+
+The response synthesizer converts the database results into a clear, concise answer appropriate to the student's question. Depending on the result, information can be presented conversationally or organized into tables and lists.
+
+This separation of routing, SQL generation, data retrieval, and response generation allows the application to use specialized instructions for different types of academic information.
 
 ## Tools & Skills
 
